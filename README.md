@@ -1,5 +1,5 @@
 # datebar
-a date progress bar on terminal, Only supports python3
+a date progress bar on terminal, supports `python2` and `python3`
 # Usage
 ```
 $ pip install datebar
