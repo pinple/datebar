@@ -10,17 +10,17 @@ def get_percent():
     start_date = datetime.datetime(year=year, month=1, day=1)
     end_date = datetime.datetime(year=year, month=12, day=31)
     total_days = (end_date - start_date).days + 1
-    print('passed days: %s' % passed_days)
-    percent = (passed_days / total_days) * 100
+    percent = (float(passed_days) / float(total_days)) * 100
     percent = int(round(percent, 0))
-    return percent
+    return passed_days, percent
 
 
 def draw():
     thick_bar = '▓'
     thin_bar = '░'
-    percent = get_percent()
+    passed_days, percent = get_percent()
     bar = percent * thick_bar + (100 - percent) * thin_bar
+    print('passed days: %s' % passed_days)
     print(bar + str(percent) + '%')
 
 
