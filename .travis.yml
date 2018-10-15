@@ -9,7 +9,7 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - py.test tests/
+  - py.test tests/test_percent.py
 notifications:
   email:
     on_success: never
