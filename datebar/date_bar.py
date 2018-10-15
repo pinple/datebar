@@ -1,3 +1,4 @@
+# encoding: utf8
 #!/usr/bin/env python
 import time
 import datetime
@@ -16,8 +17,8 @@ def get_percent():
 
 
 def draw():
-    thick_bar = '▓'
-    thin_bar = '░'
+    thick_bar = u'▓'
+    thin_bar = u'░'
     passed_days, percent = get_percent()
     bar = percent * thick_bar + (100 - percent) * thin_bar
     print('passed days: %s' % passed_days)
