@@ -1,6 +1,12 @@
 # datebar
+[![Build Status](https://travis-ci.org/Neulana/datebar.svg?branch=master)](https://travis-ci.org/Neulana/datebar)
+[![PyPI](https://img.shields.io/pypi/v/nine.svg)](https://pypi.org/project/datebar/)
+
+
 a date progress bar on terminal, supports `python2` and `python3`
+
 # Usage
+
 ```
 $ pip install datebar
 ```
